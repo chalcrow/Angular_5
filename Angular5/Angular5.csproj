@@ -6,11 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\my-app\src\app\hero.ts" />
+    <Content Remove="wwwroot\js\my-app\src\app\mock-heroes.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\my-app\src\app\hero.ts" />
+    <TypeScriptCompile Include="wwwroot\js\my-app\src\app\mock-heroes.ts" />
   </ItemGroup>
 
 </Project>
